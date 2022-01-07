@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Клиника</title>
+	<link rel="stylesheet" href="main.css">  <!--Подключение css файла по ссылке</!-->
+</head>
+<body>
+ 
+<!------1 block-----------------------------------------------</!-->
+	<div id="main">   <!-- 'div' -контейнер</!-->
+		<div id="main-container">
+			<div id="main-header">	 <!--Верхняя часть страницы (1 строка) Состоит из 3-ех главных частей</!-->
+
+				<div id="main-header-logo">
+					<img src="klinika_photos/main-header-logo.png" alt="Что-то не так!">
+					<span>Улыбка</span>		 <!--Название для применения стилей</!-->
+				</div>
+
+				<div id="main-header-menu">		<!--Пункты меню => ссылки </!-->
+					<a href="#" class="menu-item">О нас</a> 	<!--  '#' для того, чтобы при нажатии на гиперссылку ничего не просходило</!-->
+					<a href="#" class="menu-item">Услуги</a>
+					<a href="#" class="menu-item">Доктора</a>
+					<a href="#" class="menu-item">Контакты</a>
+				</div>
+
+				<div id="main-header-phone">
+					<img src="klinika_photos/main-header-phone.png" alt="Что-то не так">
+					<span>+7(812) 123-45-67</span>
+				</div>
+		</div>
+<!---</!-->
+
+			<div id="main-content"> <!--</!-->
+				<h1 id="main-title">Качественное и безболезненное лечение зубов</h1>
+
+				<div id="main-items"> 
+					<div class="main-item">   <!--Контейнер для элемента(строки), состоящей из 2-ух элем.  (строка 1)</!-->
+						<img src="klinika_photos/check-mark.png" alt="">
+						<span>Только современное оборудование и материалы</span>
+					</div>
+				</div>
+
+				<div id="main-items">
+					<div class="main-item">   <!--Контейнер для элемента(строки), состоящей из 2-ух элем.  (строка 2)</!-->
+						<img src="klinika_photos/check-mark.png" alt="">
+						<span>Узкопрофильные специалисты</span>
+					</div>
+				</div>
+
+				<div id="main-items">
+					<div class="main-item">   <!--Контейнер для элемента(строки), состоящей из 2-ух элем.  (строка 3)</!-->
+						<img src="klinika_photos/check-mark.png" alt="">
+						<span>Возможность рассрочки</span>
+					</div>
+
+				</div> 
+
+				<button id="main-action" class="button">Записаться на приём</button>
+
+			</div> <!--</!-->
+		</div>
+	</div>
+
+
+<!-----2 block------------------------------------------------</!-->
+
+<div id="about">	<!--4 части</!-->
+	<div id="about-container">
+
+		<div class="about-item">
+			<div class="title" id="about-title">О нас</div>	
+
+		<div class="about-text">«Улыбка» – это частная стоматологическая клиника, в которой с пациентами работают высококвалифицированные специалисты разного профиля. У нас вы сможете при необходимости получить все необходимые услуги, а также пройти регулярный плановый осмотр.</div>
+
+			<div class="about-text">Стоматология «Улыбка» — когда качество выше ваших ожиданий!</div>
+		</div>
+
+		<div class="about-item">
+			<img src="klinika_photos/pic1.png" class="about-title-img" alt="">
+		</div>
+
+		<div class="about-item">
+			<img src="klinika_photos/pic2.png" class="about-title-img" alt="">
+		</div>
+	
+		<div class="about-item" id="about-quote">
+			<div id="about-quote-image">
+				<img src="klinika_photos/gg.png" alt="">
+			</div>
+			<div id="about-quote-image-text">«Мы любим свою работу. Для нас важно, чтобы каждый пациент получил высококвалифицированную помощь наших врачей-стоматологов, а также высококлассный сервис европейского уровня».</div>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<!-----3 block------------------------------------------------</!-->
+<div id="services">
+	
+	<div id="services-container">
+
+		<div id="services-title" class="title">Наши услуги</div>  <!--Стиль для title сделан ранее</!-->
+
+		<div id="service-items" >  <!--Блок с картинками (их 8 штук)</!-->
+
+			<div class="service-item"> <!-- 1-вая</!-->
+				<div class="service-item-img">
+					<img src="klinika_photos/01.png" alt="">
+				</div>
+				<div class="service-item-text">Терапевтическая стоматология</div>
+			</div>
+
+			<div class="service-item bg"> <!-- 2-вая</!-->
+				<div class="service-item-img">
+					<img src="klinika_photos/02.png" alt="">
+				</div>
+				<div class="service-item-text">Рентгендиагностика</div>
+			</div>
+
+			<div class="service-item"> <!-- 3-вая</!-->
+				<div class="service-item-img">
+					<img src="klinika_photos/03.png" alt="">
+				</div>
+				<div class="service-item-text">Отбеливание</div>
+			</div>
+
+			<div class="service-item bg"> <!-- 4-вая</!-->
+				<div class="service-item-img">
+					<img src="klinika_photos/04.png" alt="">
+				</div>
+				<div class="service-item-text">Имплантация</div>
+			</div>
+
+			<div class="service-item bg"> <!-- 5-вая</!-->
+				<div class="service-item-img">
+					<img src="klinika_photos/05.png" alt="">
+				</div>
+				<div class="service-item-text">Хирургия</div>
+			</div>
+
+			<div class="service-item"> <!-- 6-вая</!-->
+				<div class="service-item-img">
+					<img src="klinika_photos/06.png" alt="">
+				</div>
+				<div class="service-item-text">Протезирование</div>
+			</div>
+
+			<div class="service-item bg"> <!-- 7-вая</!-->
+				<div class="service-item-img">
+					<img src="klinika_photos/07.png" alt="">
+				</div>
+				<div class="service-item-text">Ортодонтия</div>
+			</div>
+
+			<div class="service-item"> <!-- 8-вая</!-->
+				<div class="service-item-img">
+					<img src="klinika_photos/08.png" alt="">
+				</div>
+				<div class="service-item-text">Эстетическая стоматология</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!-----4 block------------------------------------------------</!-->
+	
+	<div id="reserve">
+		
+		<div id="reserve-container">
+		
+			<div id="reserve-title" class="title">Записаться на приём</div>
+			
+			<div id="reserve-description">Хотите записаться на прием к специалисту —
+				заполните форму ниже, и мы перезвоним Вам в течение 30 минут!</div>	
+
+			<form action="" id="reserve-form">
+				<input type="text" placeholder="Ваше имя">  <!--Текст на поле ввода</!-->
+				<input type="text" placeholder="Ваш телефон">
+				<button class="button">Записаться</button>   <!--Стиль для button уже был сделан ранее</!-->
+			</form>
+
+		</div>
+
+	</div>
+
+<!-----5 block------------------------------------------------</!-->
+
+	<div id="doctors">  <!--Блок с докторами</!-->
+
+		<div id="doctors-container"> <!--Контейнер для этого блока (внутри будт его составляющие)</!-->
+			
+			<div id="doctors-title" class="title">Наши доктора</div> <!--Название блока</!-->
+
+			<div id="doctors-img">	<!--Картинки (4 штуки)</!-->
+				<img src="klinika_photos/doc1.png" alt="">
+				<img src="klinika_photos/doc2.png" alt="">
+				<img src="klinika_photos/doc3.png" alt="">
+				<img src="klinika_photos/doc4.png" alt="">
+			</div>
+
+		</div>
+
+	</div>
+
+<!-----6 block------------------------------------------------</!-->
+
+	<div id="footer">
+		
+		<div id="footer-container">
+			
+			<div id="footer-logo"> <!--Логотип и текст</!-->
+				<img src="klinika_photos/footer-logo.png" alt="">
+				<span>Улыбка</span>
+			</div>
+<!--</!-->
+			<div id="footer-time"> <!--Часы и текст</!-->
+				<div id="footer-time-img">
+					<img src="klinika_photos/clock.png" alt="">
+				</div>
+
+				<div id="footer-time-text">
+					<div id="footer-time-text-title">Режим работы:</div>
+					<div id="footer-time-text-description">ежедневно с 9:00 до 21:00</div>
+				</div>
+			</div>
+<!--</!-->
+			<div id="footer-address">
+				<div id="footer-address-img">
+					<img src="klinika_photos/placeholder.png" alt="">
+				</div>
+
+				<div id="footer-address-text">
+					<div id="footer-address-text-title">Адрес:</div>
+					<div id="footer-address-text-description">Богатырский пр., 24</div>
+				</div>
+			</div>
+<!--</!-->
+			<div id="footer-phone">
+					<img src="klinika_photos/footer-phone.png" alt="">
+					<span>+7(812) 123-45-67</span>
+			</div>
+
+		</div>
+
+	</div>
+
+
+</body>
+</html>

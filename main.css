@@ -1,0 +1,355 @@
+/*@font-face {   
+	font-family: Montserrat;
+	src: url("fonts/Montserrat-Regular.ttf");
+}*/
+
+@font-face {  /*Открытие шрифта по ссылке*/
+	font-family: MontserratBold;
+	src: url("fonts/Montserrat-Bold.ttf");
+}
+
+body {   /*селектор*/ 							/*В body находится то, что на всей странице по умолчанию*/
+	margin: 0;   /*Обнуляем/убираем отступы*/
+	font-family: Montserrat, sans-serif;  /*Указываем,какой нам нужно использовать шрифт(по всей странице).(если не загр, то загрузится 'sans-serif'*/
+}
+
+#main { /*применяется для всех элементов в main*/
+	background-image: url("klinika_photos/bg.png");
+	background-size: 1920px 100%;
+	background-position: center;
+}
+
+/*--FIRST BLOCK------------------------------------------------------------------------------------------------*/
+
+/*Опишем стили для контейнера*/
+#main-container {  /*# - т.к. это id*/
+	max-width: 1170px;  /*ограничение ширины*/
+	margin: 0 auto;  /*Отступы сверху и снизу = 0, а справа и слева будут автоматически рассч, что сделает блок по горизонтали*/
+	padding: 43px; /*Отступ сверху (43 пикселя)*/
+}
+
+#main-header {
+	display: flex; /*Выстраивания всех элементов (внутри main-header) в 1 строчку*/
+	align-items: center;  /*Отцентрирование элементов по вертикали*/
+}
+
+#main-header-logo span {  /*span находится внутри элемента main-header-logo*/  /*каждый пробел в селекторе -вложенность*/
+  font-size: 18px;
+  color: rgb(56, 104, 210);
+  margin-left: 10px;  /*Отступ слева 10 пикселей*/
+}
+
+#main-header-menu {   /*Сама полоска меню*/
+	margin-left: 264px;
+}
+
+#main-header-menu a.menu-item {  /*Иконки внутри полоски меню*/
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  color: rgb(56, 104, 210);
+  margin-right: 30px;
+  padding: 5px 10px;
+  text-decoration: none;	/*Убираем подчеркивание*/
+}
+
+#main-header-menu a.menu-item:hover { /*Эффект наведения на иконки в меню*/   /* Hover - поведение при наведении*/
+	border-bottom: 2px solid rgb(56, 104, 210);  /*Заполненная синяя грань снизу*/
+}
+
+#main-header-phone {
+	margin-left: 100px; /*Сделаем отступ слева в 100px  (отмерили линейкой в PS*/
+}
+#main-header-phone span { /*Применяем к span*/
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  color: rgb(56, 104, 210);
+  margin-left: 10px;
+}
+
+#main-header-phone span, 	/*Применяем один блок стилей сразу для 2-ух селекторов*/
+#main-header-phone img { 					/*То есть мы сразу и слово и картинку выровняли*/
+	vertical-align: middle; /*Выравнивание по вертикали, по центру*/
+}
+
+/*-----------------------*/
+
+#main-content { /*Расположение main-content*/
+	margin-top: 181px;
+	max-width: 730px;
+}
+
+#main-title {
+  font-size: 40px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  color: rgb(56, 104, 210);
+  line-height: 45px;  /*(т.к. 2 строки) высота строки*/
+}
+
+#main-items .main-item {
+	margin-top: 17px;
+}
+
+#main-items .main-item span,
+#main-items .main-item img {
+	vertical-align: middle;
+}
+
+#main-items .main-item span {	/*Стилизация текста*/
+	margin-left: 11px;
+	font-size: 18px;
+  	color: rgb(34, 56, 104);
+}
+
+.button { 	/*Класс для всех кнопок на странице, содержащих общие стили*/
+/*Слой прямоугольника(кнопки)*/
+  background-color: rgb(56, 104, 210);
+  border: 1px solid rgb(56, 104, 210);
+  box-shadow: 3.536px 3.536px 20.01px 2.99px rgba(40, 67, 127, 0.36);
+  width: 324px;
+  height: 58px;
+/*Слой текста на кномке*/
+  font-size: 18px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+#main-action {
+  margin-top: 55px;
+  margin-bottom: 250px;
+}
+
+/*----SECOND BLOCK----------------------------------------------------------------------------------------------*/
+
+.title {  /*сделаем класс стиль title, чтобы в дальнейшем многократно им пользоваться*/
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(56, 104, 210);
+}
+
+#about {
+  margin-top: 160px;
+  margin-bottom: 126px;
+}
+
+#about-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /*помещает непомещающиеся блоки на новую строку*/
+  justify-content: space-between;
+}
+
+#about-container .about-item {  /*стили применятся для всех about-item в блоке about-container*/
+  margin-top: 40px;
+  max-width: 560px;
+}
+
+#about-title {
+  margin-bottom: 60px;
+}
+
+#about-container .about-item .about-text {
+  font-size: 16px;
+  color: rgb(40, 67, 127);
+  line-height: 21px;
+  margin-top: 45px; 
+}
+
+#about-container .about-item .about-title-img {
+  box-shadow: 20px 20px 9px 7px #ebf0fa;
+}
+
+#about-quote {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+}
+
+#about-quote-image-text {
+  margin-left: 29px;
+  font-size: 16px;
+  color: rgb(40, 67, 127);
+  line-height: 21px;
+}
+
+/*----THIRD BLOCK----------------------------------------------------------------------------------------------*/
+
+#services { 
+  margin-bottom: 108px;   /*весь блок сервисов (в нем делают отступы по отношению к другим блокам)*/
+}
+
+#services-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+#services-title {
+  margin-bottom: 60px;
+}
+
+#service-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#service-items .service-item {
+  width: 292px;
+  height: 292px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#service-items .service-item.bg { /*класс bg в классе service-items*/
+  background: #d5d6d7
+}
+
+#service-items .service-item .service-item-text {
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: rgb(56, 104, 210);
+  text-transform: uppercase;
+  line-height: 23px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/*----FORTH BLOCK----------------------------------------------------------------------------------------------*/
+
+#reserve {  /*стили для всего блока reserve*/
+  background-image: url("klinika_photos/reserve_bg.png");
+  background-size: 1920px 470px;
+  background-position: center;
+
+  padding: 132px 0; /*отступы по 132px вверх и вниз и без отступов вправо и влево*/
+}
+
+#reserve-container {
+  max-width: 1170px; /*максимальная ширина экрана*/
+  margin: 0 auto; /*выравнивание по центру*/
+}
+
+#reserve-title {
+  margin-bottom: 30px;
+  text-align: center; /*выравнивание заголовка по центру*/
+}
+
+#reserve-description {
+  font-size: 16px;
+  color: rgb(40, 67, 127);
+  line-height: 21px;
+  text-align: center;
+  max-width: 530px; /*ограничение блока с текстом по ширине*/
+  margin: 0 auto; 
+}
+
+#reserve-form {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center; /*выравнивание блока по центру*/
+}
+
+#reserve-form input {
+  border-width: 1px;
+  border-color: rgb(56, 104, 210);
+  border-style: solid;
+  background-color: rgb(255, 255, 255);
+  width: 268px;
+  height: 48px;
+  padding: 20px;
+  box-sizing: border-box;   /*нормализация width и padding*/
+  margin-right: 10px;
+}
+
+#reserve-form button {
+  height: 48px;
+}
+
+/*----FIFTH BLOCK----------------------------------------------------------------------------------------------*/
+
+#doctors {
+  margin: 122px 0 118px 0;  /*отступы сверху справа снизу слева (по часовой стрелке, если все 4 значения)*/
+}
+
+#doctors-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+#doctors-title {
+  margin-bottom: 60px;
+}
+
+#doctors-img {
+  display: flex;
+  justify-content: space-between; /*расстояние между картинками*/
+  align-items: center; /*выравнивание по центру, по вертикали*/
+}
+
+/*----SIXTH BLOCK----------------------------------------------------------------------------------------------*/
+
+#footer {
+  background: #28437f;
+}
+
+#footer-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer-logo span{
+  font-size: 18px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+#footer-time, #footer-address {  /*Два одинаковых стиля перечислены через запятую*/
+  margin-left: 142px;
+  display: flex;
+}
+
+#footer-time-text, #footer-address-text {
+  margin-left: 9px;
+}
+
+#footer-time-text-title, #footer-address-text-title {
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+#footer-time-text-description, #footer-address-text-description {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  margin-top: 5px;
+}
+
+#footer-phone {
+  margin-left: 130px;
+}
+
+#footer-phone span {
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+}
+
+#footer-phone img,
+#footer-phone span {
+  vertical-align: middle;
+  color: #fff;
+}
+
